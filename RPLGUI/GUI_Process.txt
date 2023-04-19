@@ -1,0 +1,34 @@
+GUI Procedure -
+The user starts the GUI.
+
+    Setting Pins and Running Device Diagnostics -
+    The user connects the devices and valves from the test stand to the LabJack and configures the pins in the Data Acquisition & Logging System tab.
+        While the devices are being connected, the user can verify all device connections are in place by checking the Feed System tab.
+            The algorithm checks to see if the reading for each device is within range.
+                If the reading is within range, the light in the Feed System tab is on and the device is connected.
+                (How do we check if a runtank is filled or not?)
+
+    Control System Configuration -
+    The user then configures the procedures and abort cases in the Control System Configuration tab.
+
+    Running Valve Diagnostics -
+    The Valve Diagnostics button stays showing while the Dry Test-Run and Maintain Pressure buttons are invisible.
+    The user presses the Valve Diagnostics button to verify all valves are connected.
+        This turns on and off each valve and measures if the voltage drop across the Solenoid Power Supply is within range.
+            If the voltage is within range, the light in the Feed System tab is on and the valve is connected.
+    If all devices and valves are green in the Feed System tab, the Dry Test-Run button appears.
+    The user presses the Dry Test-Run button.
+        This sequentially turns on or off the valves according to the configured procedure list from earlier by reading the top row from each file.
+            ****Note that this does not run through the Abort System nor does it detect sensor values.****
+    If the Dry Test-Run is complete, the runtanks are then filled by attaching the fuel and oxidizer lines to the Feed System and following the Fill Process.
+
+    Fill Process -
+
+    Firing the Rocket Engine -
+    After the Fill Process is complete, the user stands a safe distance away from the test stand.
+    The runtanks are massed to check if they are filled.
+        This makes the Maintain Pressure button appear and makes the Valve Diagnostics button and the Dry Test-Run button invisible and off to avoid further misclicking.
+    The user presses the Maintain Pressure button to not let the Feed System depressurize. The rocket engine is ready to fire.
+    To fire the rocket engine, the user presses the Arm button [on the count of 3] and holds down the Deadman Switch [on the count of 2].
+        This makes the Fire button appear and makes the Maintain Pressure button invisible and off to avoid further misclicking.
+        The user presses the Fire button [on the count of 1] to fire the rocket engine.

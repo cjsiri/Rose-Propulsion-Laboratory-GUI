@@ -1,0 +1,15 @@
+1,0,1,0,1,0,1,,Solenoid States C0:6
+Prefill,,,,,,,,Procedure Name R1C0
+0,,,,,,,,Priority R2C0
+Overpressure PT1,Overpressure PT2,,,,,,,Abort Name R3C0:n
+1,0,,,,,,,Abort Solenoid 0 State R4C0:n
+0,1,,,,,,,Abort Solenoid 1 State R5C0:n
+0,0,,,,,,,Abort Solenoid 2 State R6C0:n
+0,1,,,,,,,Abort Solenoid 3 State R7C0:n
+0,0,,,,,,,Abort Solenoid 4 State R8C0:n
+0,0,,,,,,,Abort Solenoid 5 State R9C0:n
+0,0,,,,,,,Abort Solenoid 6 State R10C0:n
+0,1,,,,,,,Abort Priority R11C0:n
+300,450,,,,,,,Sensor Value High R12C0:n
+-300,-300,,,,,,,Sensor Value Low R13C0:n
+1,2,,,,,,,Sensor Name R14C0:n
